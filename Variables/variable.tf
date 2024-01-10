@@ -17,3 +17,14 @@ variable "cidr_blocks" {
   type = list
   default = ["0.0.0.0/0"]
 }
+
+variable "tags" {
+  type = map
+  default = {
+    Name = "Hello Terraform"
+    Project = "Roboshop"
+    Environment = "Dev"
+    Component = "Web"
+    Terraform = "true"
+      }
+}
